@@ -11,7 +11,7 @@ def get_friendlist():
     list= vk_session.method(method, args)
     voc = []
     for item in list['items']:
-        voc.append(item['id'])
+        voc.append(item['first_name'])
     print(voc)
 
 get_friendlist()

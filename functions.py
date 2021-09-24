@@ -14,7 +14,7 @@ def get_friendlist():
         id = (item['id'])
         id_list_2.append(id)
     for item in list_1['items']:
-        if item['id'] in id_list_2 and item['first_name'] != "DELETED ":
+        if item['id'] in id_list_2 and item['first_name'] != "DELETED":
             common.append(item['first_name'] + ' ' + item['last_name'])
     print(common, len(common))
 
